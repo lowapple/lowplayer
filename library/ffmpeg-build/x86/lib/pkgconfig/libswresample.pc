@@ -1,0 +1,14 @@
+prefix=/Users/lowapple/Workspace/Android/Projects/lowplayer/library/ffmpeg-build/x86
+exec_prefix=${prefix}
+libdir=/Users/lowapple/Workspace/Android/Projects/lowplayer/library/ffmpeg-build/x86/lib
+includedir=/Users/lowapple/Workspace/Android/Projects/lowplayer/library/ffmpeg-build/x86/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 3.0.101
+Requires: libavutil >= 56.12.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswresample -lm
+Libs.private: 
+Cflags: -I${includedir}

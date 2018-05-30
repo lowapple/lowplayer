@@ -1,0 +1,14 @@
+prefix=/Users/lowapple/Workspace/Android/Projects/lowplayer/library/ffmpeg-build/x86
+exec_prefix=${prefix}
+libdir=/Users/lowapple/Workspace/Android/Projects/lowplayer/library/ffmpeg-build/x86/lib
+includedir=/Users/lowapple/Workspace/Android/Projects/lowplayer/library/ffmpeg-build/x86/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 58.15.100
+Requires: libswresample >= 3.0.101, libavutil >= 56.12.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -pthread -lm -lz
+Libs.private: 
+Cflags: -I${includedir}

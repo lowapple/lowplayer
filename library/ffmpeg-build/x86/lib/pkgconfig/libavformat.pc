@@ -1,0 +1,14 @@
+prefix=/Users/lowapple/Workspace/Android/Projects/lowplayer/library/ffmpeg-build/x86
+exec_prefix=${prefix}
+libdir=/Users/lowapple/Workspace/Android/Projects/lowplayer/library/ffmpeg-build/x86/lib
+includedir=/Users/lowapple/Workspace/Android/Projects/lowplayer/library/ffmpeg-build/x86/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 58.10.100
+Requires: libavcodec >= 58.15.100, libswresample >= 3.0.101, libavutil >= 56.12.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavformat -lm -lz
+Libs.private: 
+Cflags: -I${includedir}

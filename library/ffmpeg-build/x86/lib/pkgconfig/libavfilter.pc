@@ -1,0 +1,14 @@
+prefix=/Users/lowapple/Workspace/Android/Projects/lowplayer/library/ffmpeg-build/x86
+exec_prefix=${prefix}
+libdir=/Users/lowapple/Workspace/Android/Projects/lowplayer/library/ffmpeg-build/x86/lib
+includedir=/Users/lowapple/Workspace/Android/Projects/lowplayer/library/ffmpeg-build/x86/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 7.13.100
+Requires: libavutil >= 56.12.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavfilter -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}
